@@ -1,0 +1,152 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(64, 152, 239);
+}
+
+h1{
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+#sec_container{
+    background-color: white;
+    width: 80%;
+    max-width: 700px;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 1px 1px black;
+}
+
+#container_input {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#container_input::before{
+    content: "";
+    border-top: 1px solid rgb(72, 51, 51);
+    width: 100%;
+    position:absolute;
+    height: 10px;
+    margin-top: 70px;
+    border-radius: 30px;
+}
+
+#input_text{
+    border: 1px solid black;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    max-width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#btn{
+    width: 100%;
+    max-width: 10%;
+    background-color:rgb(64, 152, 239);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    margin-left: 5px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    font-weight: 500;
+}
+
+#btn:hover{
+    background-color: rgb(11, 60, 108);
+}
+
+#palavra{
+    color: black;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#meaning{
+    margin: 10px;
+    font-style: italic;
+}
+
+
+/* Estilos para telas menores */
+
+@media (max-width: 968px) {
+
+    #sec_container {
+        padding: 20px;
+    }
+
+    #input_text {
+        max-width: 70%;
+    }
+
+    #btn {
+        max-width: 30%;
+        margin-top: 15px;
+    }
+
+    #container_input::before{
+       
+        display: none;
+        
+    }
+}
+
+
+@media (max-width: 350px) {
+    #sec_container {
+      width: 90%;
+      padding: 20px;
+    }
+    
+    #input_text {
+      width: 70%;
+    }
+    
+    #btn {
+      width: 30%;
+      font-size: 12px;
+    }
+    
+    #palavra {
+      font-size: 18px;
+    }
+    
+    #meaning {
+      font-size: 14px;
+    }
+
+    #container_input::before{
+       
+        display: none;
+        
+    }
+  }
