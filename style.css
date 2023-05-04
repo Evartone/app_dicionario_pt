@@ -59,7 +59,7 @@
   
   #input_text {
     border: none;
-    outline: none;
+    outline: black;
     height: 48px;
     width: 100%;
     max-width: 500px;
